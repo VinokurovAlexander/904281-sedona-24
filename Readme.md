@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр](https://up.htmlacademy.ru/htmlcss/24/user/904281).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Варганов](https://htmlacademy.ru/profile/scorn_da).
 
 ---
 
