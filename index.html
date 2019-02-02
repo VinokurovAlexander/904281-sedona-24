@@ -81,7 +81,33 @@
             <a class="button button-hotels-search" href="#">Поиск гостиницы в Седоне</a>
             <b>Заинтересовались?</b>
             <p class="hotels-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <!-- Здесь будет форма -->
+            <section class = "modal modal-hotels-search"
+                <form class = "hotels-search" action = "https://echo.htmlacademy.ru" method="post">
+                    <p class = "hotels-search-item">
+                        <label for "arrival-date-field">Дата заезда</label>
+                        <input type = "text" class = "date" name = "arrival-date" id = "arrival-date-field" value = "" placeholder ="24 апреля 2017">
+                        </input>
+                    </p>
+                    <p class = "hotels-search-item">
+                        <label for="departure-date-field">Дата выезда</label>
+                        <input type = "text" class = "date" name = "departure-date" id = "departure-date-field" value = "" placeholder="4 июля 2017">
+                        </input>
+                    </p>
+                     <p class = "hotels-search-item">
+                         <label for "adults-number-field">Взрослые</label>
+                         <button class="button hostel-search-button hostel-search-button-plus"></button>
+                         <input type = "text" name = "children-number" id="children-number-field" value="2"></input>
+                         <button class="button hostel-search-button hostel-search-button-minus"></button>
+                    </p>
+                    <p class = "hotels-search-item">
+                        <label for "children-number-field">Дети</label>
+                        <button class="button hostel-search-button hostel-search-button-plus"></button>
+                        <input type = "text" name = "children-number" id="children-number-field" value="0"></input>
+                        <button class="button hostel-search-button hostel-search-button-minus"></button>
+                   </p>
+                    <button class = "button" type = "submit">Найти</button>
+                </form>
+            </section>
             <div class="map">
                 <img src="img/map.jpg" width="800" height="400" alt="Карта Седоны">
             </div>
