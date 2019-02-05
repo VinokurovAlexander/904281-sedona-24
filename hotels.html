@@ -74,12 +74,14 @@
                    <h3 class="visually-hidden">Сортировка гостиниц</h3>
                    <div class="number-of-hotels-wrapper">
                       <label for="number-of-hotels-field">Найдено:</label>
-                      <input type="text" class="number-of-hotels-input" name="number-of-hotels-input" id="number-of-hotels-field">
+                      <output class="number-of-hotels-input" name="number-of-hotels-input" id="number-of-hotels-field"></output>
                     </div>
                     <p class="sorting-text">Сортировка:</p>
-                    <button class="button sorting-button sorting-button-price" type="submit">По цене</button>
-                    <button class="button sorting-button sorting-button-type" type="submit">По типу</button>
-                    <button class="button sorting-button sorting-button-rating" type="submit">По рейтингу</button>
+                    <ul class="sorting-list">
+                        <li class="sorting-item"><a class="sorting-link">По цене</a></li>
+                        <li class="sorting-item"><a class="sorting-link">По типу</a></li>
+                        <li class="sorting-item"><a class="sorting-link">По рейтингу</a></li>
+                    </ul>
                </section>
                <ul class="hotels-list">
                    <li class="hotels-item">
