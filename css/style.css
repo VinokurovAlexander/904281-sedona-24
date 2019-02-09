@@ -4,12 +4,11 @@ body {
 
     /* Шрифт */
     font-family: "PT Sans", Arial, sans-serif;
+    color: #333333;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    color: #333333;
     text-transform: uppercase;
-
 
     /* Фон */
     background-color: #f2f2f2;
@@ -19,15 +18,12 @@ a {
     text-decoration: none;
 }
 
-
-
-
-
 .main-navigation {
+    color: #000000;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
-    color: #000000;
+
     background-color: #ffffff;
 }
 
@@ -41,7 +37,7 @@ a {
     color: #000000;
 }
 
-.site-navigation-current a{
+.site-navigation-current a {
     color: #766357;
     cursor: pointer;
 }
@@ -54,14 +50,15 @@ a {
 
 .site-navigation a:active {
     color: #000000;
-    opacity: .3;
+    opacity: 0.3;
 }
 
 .hero {
+    background-color: #c3d8e7;
     background: url(../img/hero-mountains.jpg);
     background-repeat: no-repeat;
-
 }
+
 .main-promo-wrapper {
     background-color: #ffffff;
 }
@@ -70,8 +67,6 @@ a {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-
-
 }
 
 .promo {
@@ -98,12 +93,13 @@ a {
     background-color: #81b3d2;
 }
 
+.advantages,
 .advantages-item-white {
     background-color: #ffffff;
 }
 
 .advantages-text-black,
- .advantages-item-grey .advantages-text{
+.advantages-item-grey .advantages-text {
     color: #333333;
     font-size: 14px;
     font-weight: 400;
@@ -111,8 +107,9 @@ a {
 }
 
 .advantages-item-grey {
-    background-color: #eeeeee
+    background-color: #eeeeee;
 }
+
 .hotels {
     background-color: #ffffff;
 }
@@ -131,7 +128,7 @@ a {
     line-height: 24px;
 }
 
-.hotels a{
+.hotels a {
     text-decoration: none;
 }
 
@@ -145,14 +142,15 @@ a {
 
 a.button-hotels-search {
     color: #ffffff;
-    background-color: #766357;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+
+    background-color: #766357;
 }
 
 a.button-hotels-search:hover,
-a.button-hotels-search:focus{
+a.button-hotels-search:focus {
     background-color: #604e43;
     outline:none;
 }
@@ -166,24 +164,23 @@ a.button-hotels-search:active {
 }
 
 .hotels-search-item label {
-    font-size: 21px;
     color: #000000;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
-
 }
 
 .hotel-search-button {
     color: #ffffff;
-    background-color: #81b3d2;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+
+    background-color: #81b3d2;
 }
 
 button.hotel-search-button:hover,
-button.hotel-search-button:focus{
+button.hotel-search-button:focus {
     background-color: #669ec0;
     outline: none;
 }
@@ -216,26 +213,18 @@ ul.social-list {
 }
 
 .copyright a {
-    text-decoration: none;
     color: #000000;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    text-decoration: none;
 }
 
-
-
-
-
 .filters {
-    background-color: #000000;
-    background-image: linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
-        ),
-    url(../img/hero-mountains.jpg);
+    background-color: #5e88ae;
+    background: url(../img/filters-background.jpg);
+    background-position: 45% 45%;
     background-repeat: no-repeat;
-
 }
 
 .filters legend {
@@ -261,21 +250,21 @@ ul.social-list {
 }
 
 button.range-button {
-    border-width: 2px;
-    border-style: solid;
-    border-color: #ffffff;
-    background-color: transparent;
-
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
 }
 
 button.range-button:hover,
 button.range-button:focus {
-    background-color: #ffffff;
     color: #000000;
+    background-color: #ffffff;
 }
 
 .sorting {
@@ -294,10 +283,8 @@ button.range-button:focus {
 }
 
 a.hotel-link {
-    outline: none;
     color: #000000;
-
-
+    outline: none;
 }
 
 a.hotel-link:hover,
@@ -310,8 +297,6 @@ a.hotel-link:active {
     opacity: 0.3;
 }
 
-
-
 .sorting .sorting-text {
     color: #000000;
     font-size: 12px;
@@ -321,33 +306,30 @@ a.hotel-link:active {
 
 a.sorting-link {
     color: #000000;
-    opacity: 0.3;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    cursor: pointer;
 
     border-bottom: 1px dashed #81b3d2
 
-
+    opacity: 0.3;
+    cursor: pointer;
 }
+
 a.sorting-link:hover,
 a.sroting-link:focus {
     color: #81b3d2;
 }
 
-a.sorting-link:active
-{
+a.sorting-link:active {
     color: #000000;
     border: none;
 }
-
 
 ul.hotels-list {
     list-style: none;
     background-color: #fefefe;
 }
-
 
 h3.hotel-name {
     color: #000000;
@@ -363,19 +345,18 @@ h3.hotel-name {
     line-height: 14px;
 }
 
-
 .button-info,
 .button-booking {
     outline: none;
 }
 
 a.button-info {
-    background-color: #81b3d2;
-
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
+
+    background-color: #81b3d2;
 }
 
 a.button-info:hover,
@@ -388,12 +369,12 @@ a.button-info:active {
 }
 
 a.button-booking {
-    background-color: #766357;
-
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
+
+    background-color: #766357;
 }
 
 a.button-booking:hover,
@@ -407,8 +388,9 @@ a.button-booking:active {
 
 p.rating-number {
     color:666666;
-    background-color: #f2f2f2;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+
+    background-color: #f2f2f2;
 }
