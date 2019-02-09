@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+.main-wrapper {
+    background-color: #ffffff;
+}
+
 .main-navigation {
     color: #000000;
     font-size: 14px;
