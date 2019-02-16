@@ -81,7 +81,7 @@ ul.site-navigation {
 }
 
 .site-navigation li {
-    width: 25%;
+    width: 240px;
 }
 
 .site-navigation li:nth-child(-n+2) {
