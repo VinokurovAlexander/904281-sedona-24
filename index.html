@@ -8,7 +8,7 @@
     <link  href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="main-wrapper">  
+    <div class="main-wrapper">
         <header class="main-header">
           <nav class="main-navigation">
             <ul class="site-navigation">
@@ -26,7 +26,7 @@
           <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
             <section class="hero">
                 <h2 class="visually-hidden">Главная фотография города Седона</h2>
-              <img src="img/welcome-text.png" height="400" width="500" alt="Добро пожаловать в Седону">
+                <img src="img/welcome-text.png" height="400" width="500" class = "pic-welcome" alt="Добро пожаловать в Седону">
             </section>
             <div class="main-promo-wrapper">
                 <b class="promo-bold">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</b>
@@ -36,30 +36,30 @@
               <h2 class="visually-hidden">Преимущества городка</h2>
               <ul class="advantages-list"> <!--  Основной список -->
                  <li class="advantages-item advantages-item-special advantages-item-picture"> <!-- Элемент с картинкой и синим фоном -->
-                  <h3 class="advantages-title">Настоящий городок</h3>
-                  <p class="advantages-text">№1</p>
-                  <p class="advantages-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                  <h3 class="advantages-title">Настоящий <br> городок</h3>
+                  <p class="advantages-number">№1</p>
+                  <p class="advantages-text">Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
                 </li>
                 <li class="advantages-item">
                    <ul class="advantages-inner-list">  <!-- Вложенный список -->
-                     <li class="advantages-item advantages-item-white advantages-item-icon"> <!-- Элемент белого списка -->
-                      <h3 class="advantages-title">Жилье</h3>
-                      <p class="advantages-text-black">Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
-                    </li>
-                    <li class="advantages-item advantages-item-white advantages-item-icon">
-                      <h3 class="advantages-title">Еда</h3>
-                      <p class="advantages-text-black">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                    </li>
-                    <li class="advantages-item advantages-item-white advantages-item-icon">
-                      <h3 class="advantages-title">Сувениры</h3>
-                      <p class="advantages-text-black">Не только китайского, но и местного производства!</p>
-                    </li>
-                </ul>
+                       <li class="advantages-item advantages-item-white advantages-item-icon"> <!-- Элемент белого списка -->
+                           <h3 class="advantages-title">Жилье</h3>
+                           <p class="advantages-text-black">Рекомендуем пожить в настоящем <br> мотеле, все как в кино! </p>
+                       </li>
+                       <li class="advantages-item advantages-item-white advantages-item-icon">
+                           <h3 class="advantages-title">Еда</h3>
+                           <p class="advantages-text-black">Всегда заказывайте фирменный бургер <br>, вы не разочаруетесь!</p>
+                       </li>
+                       <li class="advantages-item advantages-item-white advantages-item-icon">
+                           <h3 class="advantages-title">Сувениры</h3>
+                           <p class="advantages-text-black">Не только китайского, но и местного <br> производства!</p>
+                       </li>
+                   </ul>
                 </li>
                   <li class="advantages-item advantages-item-special advantages-item-picture"> <!-- Элемент с картинкой и синим фоном -->
                     <h3 class="advantages-title">Там есть мост дьявола</h3>
-                    <p class="advantages-text">№2</p>
-                    <p class="advantages-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    <p class="advantages-number">№2</p>
+                    <p class="advantages-text">Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p>
                   </li>
                   <li class="advantages-item">
                   <ul class="advantages-inner-list"> <!-- Вложенный список -->
@@ -84,9 +84,9 @@
               </section>
               <section class="hotels">
                 <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-                <a class="button button-hotels-search" href="#">Поиск гостиницы в Седоне</a>
                 <b>Заинтересовались?</b>
                 <p class="hotels-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <a class="button button-hotels-search" href="#">Поиск гостиницы в Седоне</a>
                 <section class="modal modal-hotels-search">
                     <form class="hotels-search" action="https://echo.htmlacademy.ru" method="get">
                         <p class="hotels-search-item">
@@ -118,15 +118,17 @@
             </section>
         </main>
         <footer class="main-footer">
-          <p class="hashtag">#VISITSEDONA</p>
-          <ul class="social-list">
-             <li><a class="social-button social-button-twitter" href="#">Твиттер</a></li>
-             <li><a class="social-button social-button-facebook" href="#">Фейсбук</a></li>
-             <li><a class="social-button social-button-youtube" href="#">Ютуб</a></li>
-          </ul>
-          <p class="copyright">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">Ссылка на лендинг интенсива по HTML и CSS</a>
-          </p>
+            <div class="footer-content-wrapper">
+              <p class="hashtag">#VISITSEDONA</p>
+              <ul class="social-list">
+                 <li><a class="social-button social-button-twitter" href="#">Твиттер</a></li>
+                 <li><a class="social-button social-button-facebook" href="#">Фейсбук</a></li>
+                 <li><a class="social-button social-button-youtube" href="#">Ютуб</a></li>
+              </ul>
+              <p class="copyright">
+                <a href="https://htmlacademy.ru/intensive/htmlcss">Ссылка на лендинг интенсива по HTML и CSS</a>
+              </p>
+            </div>
         </footer>
     <div>
   </body>
