@@ -441,8 +441,8 @@ ul.site-navigation {
     /* align-items: center; */
 }
 
-.hotels-search .adults-number,
-.hotels-search .children-number,
+.hotels-search .adults-number-input,
+.hotels-search .children-number-input,
 .hotel-search-button-plus,
 .hotel-search-button-minus {
     width: 38px;
@@ -451,18 +451,18 @@ ul.site-navigation {
     background-color: #f2f2f2;
 }
 
-.adults-number,
-.children-number {
+.adults-number-input,
+.children-number-input {
     padding: 0;
 
     vertical-align: middle;
 }
 
-.hotel-search-button-plus {
+.hotel-search-button-minus {
     margin-right: -4px;
 }
 
-.hotel-search-button-minus {
+.hotel-search-button-plus {
     margin-left: -4px;
 }
 
@@ -478,7 +478,7 @@ ul.site-navigation {
 
     position: absolute;
 
-    width: 12px;
+    width: 11px;
     height: 3px;
 
     background-color: #a9a9a9;
@@ -486,6 +486,28 @@ ul.site-navigation {
 
 .hotel-search-button-plus::after {
     transform: rotate(90deg);
+}
+
+ .adults-number + .hotel-search-button-minus::after {
+     left: 180px;
+     top: 208px;
+ }
+
+.adults-number-input  + .hotel-search-button-plus::before,
+ .adults-number-input  + .hotel-search-button-plus::after {
+    left: 256px;
+    top: 208px;
+}
+
+.children-number + .hotel-search-button-minus::after {
+    right: 144px;
+    top: 208px;
+}
+
+.children-number-input + .hotel-search-button-plus::after
+.children-number-input + .hotel-search-button-plus::before{
+    right: 0px;
+    top: 208px;
 }
 
 .hotels-search p {
@@ -508,7 +530,7 @@ ul.site-navigation {
 
 .arrival-date {
     margin-top: 55px;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
 }
 
 .arrival-date label {
@@ -516,7 +538,7 @@ ul.site-navigation {
 }
 
 .departure-date label {
-    margin-right: 18px;
+    margin-right: 16px;
 }
 
 .departure-date {
@@ -552,7 +574,7 @@ a.button-hotels-search:active {
     width: 346px;
     min-height: 38px;
 
-     padding: 12px 10px; /* верх/низ лево/право */
+     padding: 11px 10px; /* верх/низ лево/право */
      padding-right: 40px;
 }
 
@@ -565,7 +587,20 @@ a.button-hotels-search:active {
     color: #000000;
 }
 
+.persons-number .adults-number {
+    margin-right: 37px;
+    background-color: red;
+}
 
+.persons-number .children-number {
+    margin-left: 49px;
+    margin-right: 23px;
+}
+
+.persons-number {
+    margin-bottom: 20px;
+
+}
 
 .hotel-search-button {
     font-size: 21px;
@@ -963,4 +998,9 @@ p.rating-number {
     color:666666;
 
     background-color: #f2f2f2;
+}
+
+.hotels-search input,
+.hotels-search button {
+    background-color: red;
 }
