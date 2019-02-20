@@ -359,7 +359,7 @@ ul.site-navigation {
     width: 1200px;
     min-height: 764px;
 
-    text-align: center;
+    /* text-align: center; */
 
     background-color: #ffffff;
 }
@@ -368,6 +368,7 @@ ul.site-navigation {
     display: block;
     padding-top: 50px;
     padding-bottom: 24px;
+    text-align: center;
 
     font-size: 30px;
     font-weight: 700;
@@ -380,6 +381,7 @@ ul.site-navigation {
 .hotels-info {
     margin: 0;
     margin-bottom: 47px;
+    text-align: center;
 
     font-size: 14px;
     font-weight: 400px;
@@ -431,32 +433,94 @@ ul.site-navigation {
     margin-right: auto;
 }
 
-.modal p {
-    margin: 0;
-}
-
 .hotels-search {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
 
+.hotels-search .adults-number,
+.hotels-search .children-number,
+.hotel-search-button-plus,
+.hotel-search-button-minus {
+    width: 38px;
+    min-height: 38px;
+
+    background-color: #f2f2f2;
+}
+
+.adults-number,
+.children-number {
+    padding: 0;
+
+    vertical-align: middle;
+}
+
+.hotel-search-button-plus {
+    margin-right: -4px;
+}
+
+.hotel-search-button-minus {
+    margin-left: -4px;
+}
+
+.hotel-search-button-plus,
+.hotel-search-button-minus {
+    padding: 0;
+}
+
+.hotel-search-button-plus::after,
+.hotel-search-button-plus::before,
+.hotel-search-button-minus::after{
+    content: "";
+
+    position: absolute;
+
+    width: 12px;
+    height: 3px;
+
+    background-color: #a9a9a9;
+}
+
+.hotel-search-button-plus::after {
+    transform: rotate(90deg);
+}
 
 .hotels-search p {
     display: block;
 }
 
-.arrival-date {
-    margin: 15px;
-}
 /* .hotel-search-button {
     display: block;
     width: 100%;
 } */
 
-.arrival-date,
-.departure-date {
+.hotels-search-item {
     width: 460px;
+    min-height: 38px;
+
+    margin: 0;
+    margin-left: 55px;
+    /* outline: 1px solid black; */
+}
+
+.arrival-date {
+    margin-top: 55px;
+    margin-bottom: 27px;
+}
+
+.arrival-date label {
+    margin-right: 20px;
+}
+
+.departure-date label {
+    margin-right: 18px;
+}
+
+.departure-date {
+    margin-bottom: 30px;
 }
 
 a.button-hotels-search:hover,
@@ -484,8 +548,12 @@ a.button-hotels-search:active {
 }
 
 .hotels-search .form-date-input {
+    box-sizing: border-box;
     width: 346px;
     min-height: 38px;
+
+     padding: 12px 10px; /* верх/низ лево/право */
+     padding-right: 40px;
 }
 
 .hotels-search-item label {
@@ -496,6 +564,8 @@ a.button-hotels-search:active {
 
     color: #000000;
 }
+
+
 
 .hotel-search-button {
     font-size: 21px;
