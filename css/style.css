@@ -75,7 +75,7 @@ a {
 ul.site-navigation {
     display: flex;
 
-    width: 1056px;
+     width: 1056px;                             /*УТОЧНИТЬ */
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -228,12 +228,14 @@ ul.site-navigation {
 }
 
 .mountains-background .advantages-title {
-    padding-top: 46px;
+    padding-top: 45px;
 }
 
 .advantages-item-icon::before {
     content: "";
-    display: block;
+    display: inline-block;
+
+    margin: 0;
 
     background-repeat: no-repeat;
 }
@@ -241,10 +243,10 @@ ul.site-navigation {
 .icon-home::before {
     width: 76px;
     height: 72px;
-    margin: 0px;
-    margin-top: 60px;
-    margin-bottom: 29px;
-    margin-left: 162px;
+    margin-bottom: 24px;
+    /* margin-top: 60px;
+
+    margin-left: 162px; */
 
     background-image: url(../img/icon-home.svg);
 }
@@ -252,10 +254,9 @@ ul.site-navigation {
 .icon-food::before {
     width: 76px;
     height: 72px;
-    margin: 0px;
-    margin-top: 61px;
-    margin-bottom: 28px;
-    margin-left: 163px;
+    margin-bottom: 21px;
+    /* margin-top: 61px;
+    margin-left: 163px; */
 
     background-image: url(../img/icon-food.svg);
 }
@@ -263,10 +264,10 @@ ul.site-navigation {
 .icon-souvenir::before {
     width: 64px;
     height: 76px;
-    margin: 0px;
-    margin-top: 56px;
-    margin-bottom: 29px;
-    margin-left: 168px;
+    margin-bottom: 23px;
+    /* margin-top: 56px;
+
+    margin-left: 168px; */
 
     background-image: url(../img/icon-souvenir.svg);
 
@@ -288,12 +289,32 @@ ul.site-navigation {
 }
 
 .advantages-item-white {
-    width: 400px;
-    min-height: 330px;
-
     text-align: center;
-
     background-color: #ffffff;
+}
+
+.advantages-item-white.icon-home {
+    /* width: 400px; */
+    /* min-height: 183px; */
+    /* padding: 60px 55px; */
+    padding-top: 60px;
+    padding-bottom: 82px;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+.advantages-item-white.icon-food {
+    padding-top: 61px;
+    padding-bottom: 82px;
+    padding-left: 57px;
+    padding-right: 57px;
+}
+
+.advantages-item-white.icon-souvenir {
+    padding-top: 55px;
+    padding-bottom: 82px;
+    padding-left: 63px;
+    padding-right: 63px;
 }
 
 .advantages-text-black {
@@ -318,11 +339,17 @@ ul.site-navigation {
 
 .advantages-item-grey .advantages-title {
     margin: 0;
-    margin-top: 47px;
 
     font-size: 21px;
     font-weight: 700;
     line-height: 21px;
+}
+
+.advantages-item-grey .text-wrapper {
+    padding-top: 47px;
+    padding-bottom: 82px;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .advantages-item-grey .advantages-number {
@@ -341,8 +368,6 @@ ul.site-navigation {
 .advantages-inner-list {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    min-height: 256px;
     margin: 0;
     padding: 0;
 }
@@ -350,7 +375,7 @@ ul.site-navigation {
 .hotels {
     position: relative;
     width: 1200px;
-    min-height: 764px;
+    min-height: 291px;
 
     background-color: #ffffff;
 }
@@ -411,8 +436,8 @@ ul.site-navigation {
 
 .modal-hotels-search {
     position: absolute;
-    top: 291px;
-    left: 316px;
+    left: 50%;
+    transform: translateX(-50%);
 
     width: 568px;
     min-height: 395px;
@@ -655,7 +680,7 @@ ul.social-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 150px;
+     width: 150px;  /*  ЗАДАТЬ РОДИТЕЛЬСКИЙ БЛОК И УБРАТЬ!  */
     margin: 36px auto;
     padding: 0;
 
@@ -788,6 +813,7 @@ ul.social-list {
 .filters-list {
     margin: 0;
     padding: 0;
+    padding-left: 39px;
 }
 
 .filters-option {
@@ -849,7 +875,7 @@ a.hotel-link:active {
 .sorting-wrapper {
     display: flex;
     align-items: baseline;
-    width: 528px;
+     width: 528px;  /* ПРОВЕРИТЬ */
     margin-left: 72px;
 }
 
@@ -918,7 +944,7 @@ ul.hotels-list {
 .hotels-item-main-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 1056px;
+    width: 1056px; /* Убрать свойство, Задать родительский блок с такой шириной и padding:  */
     min-height: 150px;
     margin: 0;
     margin-left: 72px;
