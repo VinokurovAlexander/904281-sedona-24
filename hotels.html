@@ -30,7 +30,7 @@
                             <div class="filters-hotels-wrapper">
                                 <div class="filter-infrastructure-wrapper">
                                     <fieldset>
-                                        <legend class="filters-legend">Инфраструктура</legend>
+                                        <legend class="filters-legend">Инфраструктура:</legend>
                                             <ul class="filters-list">
                                                 <li class="filters-option">
                                                     <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="filters-pool" id="filters-pool-field" checked>
@@ -49,7 +49,7 @@
                                 </div>
                                 <div class="filter-house-type-wrapper">
                                     <fieldset>
-                                        <legend class="filters-legend">Тип жилья</legend>
+                                        <legend class="filters-legend">Тип жилья:</legend>
                                         <ul class="filters-list">
                                             <li class="filters-option">
                                                 <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="filters-hotel" id="filters-hotel-field" checked>
@@ -69,14 +69,19 @@
                                 <div class="hotel-price-wrapper">
                                     <fieldset>
                                         <legend class="filters-legend">Стоимость в сутки (Р):</legend>
-                                        <div class="output-area">
-                                            <input type="text" class="hotel-price-output" name="hotel-price-output-min"></output>
-                                            <input type="text" class="hotel-price-output" name="hotel-price-output-max"></output>
+                                        <div class="price-controls">
+                                            <label class="min-price"> от <input type="text" name="min-price" value="0"></label>
+                                            <label class="max-price"> до <input type="text" name="max-price" value="3000"></label>
                                         </div>
-                                        <input class="filters-range" type="range" min="0" max="5000" step="500" name="hotel-price" id="hotel-price-range">
-                                        <button  class="button range-button" type="submit">Показать</button>
+                                        <div class="range-controls">
+                                            <div class="scale">
+                                                <div class="bar"></div>
+                                                <div class="range-toggle range-toggle-min"></div>
+                                                <div class="range-toggle range-toggle-max"></div>
+                                            </div>
+                                        </div>
+                                        <button  class="btn-transparent" type="submit">Показать</button>
                                     </fieldset>
-                            </div>
                         </div>
                         </form>
 
