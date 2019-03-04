@@ -25,7 +25,7 @@ try {
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.toggle("modal-show");
+    popup.classList.toggle("modal-toggle");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -43,8 +43,8 @@ form.addEventListener("submit", function (evt) {
 window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
-        if (popup.classList.contains("modal-show")) {
-            popup.classList.toggle("modal-show");
+        if (popup.classList.contains("modal-toggle")) {
+            popup.classList.toggle("modal-toggle");
         }
     }
 });
