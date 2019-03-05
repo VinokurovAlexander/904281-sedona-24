@@ -901,8 +901,6 @@ ul.social-list {
 .filters-option label {
     position: relative;
 
-    display: block;
-
     cursor: pointer;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -946,9 +944,18 @@ ul.social-list {
     background-image: url(../img/checkbox-on-disabled.svg);
 }
 
-.filters-input-checkbox:focus +label:before {
-    border:1px solid #4D90FE;
+/* .filters-input-checkbox:focus + label::before { // РАБОТАЕТ ВЫДЕЛЕНИЕ
+    outline: 1px solid #4D90FE;
+} */
+
+.filters-input-checkbox + label:focus::before {  // НЕ РАБОТАЕТ ВЫДЕЛЕНИЕ
+    outline: 1px solid #4D90FE;
 }
+
+/* .filters-input-checkbox:active +label:before,
+.filters-input-checkbox + label:before {
+    outline: 1px solid rgba(0, 0, 0, 0);
+} */
 
 .filters ul {
     list-style: none;
@@ -1414,7 +1421,6 @@ p.rating-number {
 
     padding: 30px 72px;
 
-    /* border-top: 1px solid #e5e5e5; */
     outline: 1px solid #e5e5e5;
 }
 
