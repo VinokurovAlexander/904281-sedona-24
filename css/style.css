@@ -282,7 +282,7 @@ ul.site-navigation {
 .icon-food::before {
     width: 76px;
     height: 72px;
-    margin-bottom: 21px;
+    margin-bottom: 26px;
 
     background-image: url(../img/icon-food.svg);
 }
@@ -290,7 +290,7 @@ ul.site-navigation {
 .icon-souvenir::before {
     width: 64px;
     height: 76px;
-    margin-bottom: 23px;
+    margin-bottom: 28px;
 
     background-image: url(../img/icon-souvenir.svg);
 }
@@ -317,6 +317,7 @@ ul.site-navigation {
 
 .advantages-item-white {
     width: 400px;
+    box-sizing: border-box;
 
     text-align: center;
 
@@ -326,8 +327,8 @@ ul.site-navigation {
 .advantages-item-white.icon-food {
     padding-top: 61px;
     padding-bottom: 81px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 57px;
+    padding-right: 57px;
 }
 
 .advantages-item-white.icon-souvenir {
@@ -484,14 +485,12 @@ ul.site-navigation {
 
     z-index: 5;
 
-    animation-direction: normal;
+    /* animation-direction: normal;
     -webkit-animation-name: emergence;
             animation-name: emergence;
 
     -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+            animation-duration: 1s; */
 
     width: 568px;
     min-height: 395px;
@@ -504,16 +503,16 @@ ul.site-navigation {
     line-height: 26px;
 
     color: #000000;
+    background-color: #fff;
 }
 
 .modal-toggle {
-    display: none;
     animation-direction: reverse;
     -webkit-animation-name: emergence;
             animation-name: emergence;
 
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
 }
@@ -528,6 +527,8 @@ ul.site-navigation {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+
+    min-height: 395px;
 }
 
 .hotels-search .adults-number-input,
@@ -634,13 +635,11 @@ a.button-hotels-search:focus {
 }
 
 a.button-hotels-search:active {
-    opacity: 0.3;
+    color: rgba(255,255,255,0.3);
+    background-color: #503e33;
 }
 
-.hotels-search {
-    min-height: 395px;
-    background-color: #ffffff;
-}
+
 
 .hotels-search input {
     min-height: 38px;
@@ -724,7 +723,8 @@ button.hotel-search-button:focus {
 }
 
 button.hotel-search-button:active {
-    opacity: 0.3;
+    color: rgba(255,255,255,0.3);
+    background-color: #5496bd;
 }
 
 .map {
@@ -815,6 +815,10 @@ ul.social-list {
 }
 
 .social-button:active {
+    background-color: #5496bd;
+}
+
+.social-button:active path{
     opacity: 0.3;
 }
 
@@ -1442,7 +1446,8 @@ p.rating-number {
 }
 
 .button-info:active {
-    opacity: 0.3;
+    color: rgba(255,255,255,0.3);
+    background-color: #5496bd;
 }
 
 .button-booking {
@@ -1460,7 +1465,8 @@ p.rating-number {
 }
 
 .button-booking:active {
-    opacity: 0.3;
+    color: rgba(255,255,255,0.3);
+    background-color: #503e33;
 }
 
 @-webkit-keyframes emergence {
@@ -1533,4 +1539,31 @@ p.rating-number {
 .hotel-search-button-plus:focus::before,
 .hotel-search-button-minus:focus::after {
     background-color: #81b3d2;
+}
+
+@keyframes shake {
+    0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-48%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-52%);
+  }
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
 }

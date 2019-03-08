@@ -26,12 +26,15 @@ try {
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("modal-toggle");
+    popup.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
     if (!dateArrival.value || !dateDeparture.value || !adultsNumber.value || !childrenNumber.value) {
         evt.preventDefault();
-        console.log('123');
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
         } else {
             if (isStorageSupport) {
                 localStorage.setItem("adultsNumber", adultsNumber.value);
@@ -43,8 +46,9 @@ form.addEventListener("submit", function (evt) {
 window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
-        if (popup.classList.contains("modal-toggle")) {
-            popup.classList.toggle("modal-toggle");
+        if (!popup.classList.contains("modal-toggle")) {
+            popup.classList.add("modal-toggle");
+            popup.classList.remove("modal-error");
         }
     }
 });
