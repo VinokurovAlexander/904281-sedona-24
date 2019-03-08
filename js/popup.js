@@ -23,26 +23,18 @@ try {
       childrenNumber.value = storageChildrenNumber;
   }
 
-// link.addEventListener("click", function (evt) {
-//     evt.preventDefault();
-//     popup.classList.toggle("modal-toggle");
-//     popup.classList.remove("modal-error");
-// });
-
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     if (popup.classList.contains("modal-error")) {
-        popup.classList.remove("modal-error");
+    popup.classList.remove("modal-error");
     }
-    if (!popup.classList.contains("modal-open") && !popup.classList.contains("modal-close")) {
-        popup.classList.add("modal-close");
-    }
-    else if (popup.classList.contains("modal-open")) {
+    if (popup.classList.contains("modal-open")) {
         popup.classList.remove("modal-open");
         popup.classList.add("modal-close");
     } else if (popup.classList.contains("modal-close")) {
         popup.classList.remove("modal-close");
         popup.classList.add("modal-open");
+
     }
 });
 

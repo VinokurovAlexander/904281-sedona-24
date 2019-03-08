@@ -197,8 +197,8 @@ ul.site-navigation {
     line-height: 26px
 }
 
-.advantages-item-special .advantages-title {
-    margin: 0;
+.advantages-item-special h3 {
+    margin: 0 auto;
 
     font-size: 21px;
     font-weight: 700;
@@ -207,25 +207,30 @@ ul.site-navigation {
 }
 
 .advantages-item-special .text-wrapper {
-    width: 308px;
-    min-height: 147px;
-
-    padding-top: 46px;
-    padding-bottom: 60px;
-    padding-left: 46px;
-    padding-right: 46px;
+    width: 400px;
+    min-height: 256px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
     text-align: center;
 }
 
-.advantages-item-special .advantages-number {
-    margin: 0;
-    margin-top: 24px;
+.city-background .text-wrapper {
+    padding-top: 46px;
+    padding-bottom: 57px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.advantages-item-special .advantages-text {
-    margin: 0px;
-    margin-top: 21px;
+.mountains-background .text-wrapper {
+    padding-top: 46px;
+    padding-bottom: 58px;
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+.advantages-item-special .advantages-number {
+    margin-bottom: 22px;
 }
 
 .city-background {
@@ -310,14 +315,27 @@ ul.site-navigation {
     background-color: #81b3d2;
 }
 
-.advantages-item-special:first-child h3 {
+.advantages-item-special p {
+    margin: 0;
+}
+
+.city-background h3 {
     width: 130px;
     margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.mountains-background h3 {
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 24px;
 }
 
 .advantages-item-white {
     width: 400px;
-    box-sizing: border-box;
+    min-height: 330px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
     text-align: center;
 
@@ -1217,10 +1235,6 @@ a.sorting-link:active {
     border: none;
 }
 
-.sort-order-wrapper a {
-    font-size: 0;
-}
-
 .sort-order-link-ascending::before,
 .sort-order-link-descending::before {
     content: "";
@@ -1517,10 +1531,11 @@ p.rating-number {
     background-color: #81b3d2;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
     0%,
   100% {
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 
   10%,
@@ -1528,20 +1543,42 @@ p.rating-number {
   50%,
   70%,
   90% {
-    transform: translateX(-48%);
+    -webkit-transform: translateX(-48%);
+            transform: translateX(-48%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(-52%);
+    -webkit-transform: translateX(-52%);
+            transform: translateX(-52%);
   }
 }
 
-.modal-error {
-    animation-name: shake;
-    animation-duration: 0.6s;
+@keyframes shake {
+    0%,
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-48%);
+            transform: translateX(-48%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(-52%);
+            transform: translateX(-52%);
+  }
 }
 
 .modal-close {
@@ -1549,19 +1586,45 @@ p.rating-number {
 }
 
 .modal-open {
-    animation-name: modal-open;
-    animation-duration: 1s;
+    -webkit-animation-name: modal-open;
+            animation-name: modal-open;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
 }
 
-
-@keyframes modal-open {
-    00% {
-        transform: translateX(-1000%);
+@-webkit-keyframes modal-open {
+    0% {
+        -webkit-transform: translateX(-1000%);
+                transform: translateX(-1000%);
     }
     90%  {
-        transform: translateX(-45%);
+        -webkit-transform: translateX(-45%);
+                transform: translateX(-45%);
     }
     100% {
-        transform: translateX(-55%);
+        -webkit-transform: translateX(-55%);
+                transform: translateX(-55%);
     }
+}
+
+@keyframes modal-open {
+    0% {
+        -webkit-transform: translateX(-1000%);
+                transform: translateX(-1000%);
+    }
+    90%  {
+        -webkit-transform: translateX(-45%);
+                transform: translateX(-45%);
+    }
+    100% {
+        -webkit-transform: translateX(-55%);
+                transform: translateX(-55%);
+    }
+}
+
+.modal-error {
+    -webkit-animation-name: shake;
+            animation-name: shake;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
 }

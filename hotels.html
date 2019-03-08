@@ -5,7 +5,7 @@
         <title>Гостинницы города Седона</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link  href="css/style.css" rel="stylesheet">
+        <link href="css/style_min.css" rel="stylesheet">
     </head>
     <body>
         <div class="main-wrapper">
@@ -103,8 +103,12 @@
                             </ul>
                         </div>
                         <div class="sort-order-wrapper">
-                            <a class="sort-order-link-ascending">По возрастанию</a>
-                            <a class="sort-order-link-descending active">По убыванию</a>
+                            <a class="sort-order-link-ascending">
+                                <span class="visually-hidden">По возрастанию</span>
+                            </a>
+                            <a class="sort-order-link-descending active">
+                                <span class="visually-hidden">По убыванию</span>
+                            </a>
                         </div>
                    </section>
                    <ul class="hotels-list">
