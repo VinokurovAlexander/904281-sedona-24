@@ -23,10 +23,27 @@ try {
       childrenNumber.value = storageChildrenNumber;
   }
 
+// link.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     popup.classList.toggle("modal-toggle");
+//     popup.classList.remove("modal-error");
+// });
+
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.toggle("modal-toggle");
-    popup.classList.remove("modal-error");
+    if (popup.classList.contains("modal-error")) {
+        popup.classList.remove("modal-error");
+    }
+    if (!popup.classList.contains("modal-open") && !popup.classList.contains("modal-close")) {
+        popup.classList.add("modal-close");
+    }
+    else if (popup.classList.contains("modal-open")) {
+        popup.classList.remove("modal-open");
+        popup.classList.add("modal-close");
+    } else if (popup.classList.contains("modal-close")) {
+        popup.classList.remove("modal-close");
+        popup.classList.add("modal-open");
+    }
 });
 
 form.addEventListener("submit", function (evt) {
@@ -46,8 +63,9 @@ form.addEventListener("submit", function (evt) {
 window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
-        if (!popup.classList.contains("modal-toggle")) {
-            popup.classList.add("modal-toggle");
+        if (!popup.classList.contains("modal-open")) {
+            popup.classList.remove("modal-open");
+            popup.classList.add("modal-close");
             popup.classList.remove("modal-error");
         }
     }
